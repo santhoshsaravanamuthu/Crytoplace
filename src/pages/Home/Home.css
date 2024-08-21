@@ -1,0 +1,122 @@
+.home {
+    padding: 0px 10px;
+    padding-bottom: 100px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 80px auto;
+    gap: 30px;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    width: 100%;
+}
+
+.hero form {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    width: 80%;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+
+    button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #22779e;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background-color: #1a5976;
+    }
+}
+
+.hero form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.crypto-table {
+    max-width: 800px;
+    margin: auto;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    border-radius: 15px;
+
+    .table-layout {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+        padding: 15px 20px;
+        align-items: center;
+        border-bottom: 1px solid #ffffff;
+
+        .green {
+            color: rgb(33, 163, 33);
+            text-align: center;
+        }
+
+        .red {
+            color: rgb(219, 13, 13);
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 25px;
+            }
+        }
+
+    }
+
+    .table-layout:last-child {
+        border: none;
+    }
+
+
+    .market-cap {
+        text-align: right;
+    }
+
+    @media (max-width:768px) {
+        .table-layout {
+            grid-template-columns: 0.5fr 3fr 1fr 1fr;
+        }
+
+        .market-cap {
+            display: none;
+        }
+    }
+
+    @media (max-width:500px) {
+        .table-layout div img {
+            width: 20px;
+        }
+
+        .table-layout {
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.spinner {
+    display: grid;
+    place-self: center;
+    min-height: 80vh;
+}
+
+.spin {
+    width: 65px;
+    height: 65px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color: #4500c6;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.coin-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+
+    img {
+        max-width: 100px;
+    }
+
+    p b {
+        font-size: 44px;
+    }
+}
+
+.coin-chart {
+    max-width: 600px;
+    height: 250px;
+    margin: auto;
+}
+
+.coin-info {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        border-bottom: 1px solid #252525;
+        list-style: none;
+
+        li:last-child {
+            font-weight: 300;
+        }
+    }
+}
