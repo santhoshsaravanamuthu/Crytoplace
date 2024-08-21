@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./login.css"
+import "./Login.css"
 import { toast } from 'sonner';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Firebase/Firebase';
